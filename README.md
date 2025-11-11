@@ -1,90 +1,96 @@
-*Hospital API 🚀*
-Welcome to the Hospital API. This API is designed for doctors and patients to manage patient reports and track patient health, aiming to control the spread of COVID-19 effectively.
+**🏥 Hospital API**
 
-*⭐ Introduction*
-The Hospital API is designed to facilitate doctors working in a hospital designated by the government for COVID-19 patient testing, quarantine, and well-being management. It provides essential functionalities to manage patient data, track test results, allocate quarantine facilities, and ensure the overall health and safety of COVID-19 patients.
+A robust and secure Hospital Management API built for doctors and patients to manage medical reports, track patient health, and effectively control the spread of COVID-19.
 
-It is created using the REST API pattern and built with MongoDB, ExpressJS, NodeJS, and Mongoose. Swagger is used to provide a testing UI.
+**🌟 Introduction**
 
-Features
-Authentication: Secure authentication system for doctors.
-Authorization: Role-based access control for managing resources.
-Operations: Create, read, and update doctors, and patients.
-Relationships: Establish relationships between hospitals, doctors, and patients.
-Search: Search functionality to find hospitals, doctors, and patients by various criteria.
-Error Handling: Proper error handling and response messages.
-Technologies Used
-Node.js: JavaScript runtime environment.
-Express.js: Web application framework for Node.js.
-MongoDB: NoSQL database for storing hospital, doctor, and patient data.
-Mongoose: MongoDB object modeling tool for Node.js.
-JWT: JSON Web Tokens for secure authentication.
-Bcrypt: Library for hashing passwords securely.
-Swagger: A tool for designing, building, and documenting RESTful APIs with an interactive user interface for testing.
-File Structure
-Hospital API/
-├── config/                     # contains the configuration File For connecting with database.
-├── middlewares/                # Contains authrentication middleware
-├── src/                        # contains all the source files of REST API
-|    └── doctors/               # Contains all the Required files of Doctor API
-|    |     └── controllers/     # All business logic   
-|    |     └── models/          # Schemas and repository
-|    |     └── routes/          # Route definitions
-|    └── patients/              # Contains all the Required files of patient API
-|    |     └── controllers/     # All business logic
-|    |     └── models/          # Schemas and repository
-|    |     └── routes/          # Route definitions
-|    └── utils/                 # For sending JWT token
-├── index.js                    # Express application setup
-├── package.json                # NPM package configuration
-├── README.md                   # Project README File
-├── .gitignore                  # Git ignore configuration
-|── swagger.json                # Contain Swagger components For test API UI
-🔥 Getting Started With The Project
-Clone the repository:
+The Hospital API is designed to support doctors in government-designated hospitals for COVID-19 testing, quarantine management, and patient well-being tracking.
+It provides key features like managing patient records, tracking test results, assigning quarantine facilities, and ensuring patient safety.
 
-git clone https://github.com/sahejadkadivar/Hospital-API
-Install dependencies:
+This project follows a RESTful API architecture and is built using Node.js, Express.js, MongoDB, and Mongoose.
+For easy API testing and visualization, Swagger UI is integrated.
 
+
+**🚀 Features**
+
+✅ Authentication – Secure login system for doctors using JWT.
+✅ Authorization – Role-based access control for data security.
+✅ CRUD Operations – Manage hospitals, doctors, and patients.
+✅ Relationships – Link doctors, patients, and hospitals efficiently.
+✅ Search Functionality – Search doctors, patients, or hospitals by multiple criteria.
+✅ Error Handling – Structured error responses with meaningful messages.
+✅ API Documentation – Interactive documentation using Swagger.
+
+
+**🧠 Tech Stack**
+
+
+Technology	Purpose
+Node.js	Backend runtime environment
+Express.js	Web framework for API development
+MongoDB	NoSQL database
+Mongoose	MongoDB object modeling
+JWT (JSON Web Token)	Secure authentication
+Bcrypt.js	Password hashing
+Swagger UI	Interactive API documentation
+
+
+**🗂️ Project Structure**
+
+Hospital_API/
+├── config/            # Database configuration
+├── middlewares/       # Authentication & validation middlewares
+├── src/
+│   ├── doctors/
+│   │   ├── controllers/  # Business logic for doctors
+│   │   ├── models/       # Schemas and database logic
+│   │   └── routes/       # Route definitions
+│   ├── patients/
+│   │   ├── controllers/  # Business logic for patients
+│   │   ├── models/       # Schemas and database logic
+│   │   └── routes/       # Route definitions
+│   └── utils/            # Helper utilities (JWT, etc.)
+├── index.js              # App entry point
+├── package.json          # Dependencies and scripts
+├── swagger.json          # Swagger configuration
+├── .env.example          # Example environment variables
+└── README.md             # Project documentation
+
+
+**⚙️ Getting Started**
+
+
+1️⃣ Clone the repository:
+git clone (https://github.com/sanu12386/Patient-Covid-19-Tracking)
 cd Hospital_API
-npm install
-Set up environment variables:
 
-Create a .env file in the root directory and add the following variables:
+2️⃣ Install dependencies:
+npm install
+
+3️⃣ Setup environment variables:
+
+Create a .env file in the root directory and add:
 
 PORT=6000
 DB_URL=your_mongodb_uri
-JWT_Secret=your_jwt_secret
-JWT_Expire=specify days in which token expires
+JWT_SECRET=your_jwt_secret
+JWT_EXPIRE=7d
 
-Start the server:
-
+4️⃣ Start the server:
 npm start
-API Documentation
-The API documentation is available using Swagger UI. After starting the server, navigate to http://localhost:8000 there you can click on provided link or navigate to http://localhost:8000/api-docs/in your browser to view the API documentation and test the endpoints.
 
-Screenshots
-Screenshot 1
+**🤝 Contributing**
 
-Screenshot 2
+Contributions are welcome!
+If you’d like to improve or add new features:
 
-Screenshot 3
+Fork this repo 🍴
 
-Screenshot 4
+Create a new branch (feature/your-feature-name)
 
-Screenshot 5
+Submit a Pull Request 🚀
 
-Contributing
-Feel free to contribute to this project by creating issues or submitting pull requests. Your contributions are welcome!
+**💬 Acknowledgements**
 
-Hosted URL
-The Hospital API is currently hosted on Render.
-
-link for trial is: click here to experience it!
-
-Authors
-sahejadkadivar
-🐦 Follow Me:
-LinkedIn
-
-I hope you like the project. Thanks for reading :)
+Thanks to everyone contributing towards open-source healthcare technology.
+Together, we can build digital solutions that save lives.
