@@ -41,9 +41,12 @@ Swagger UI	Interactive API documentation
 
 
 Hospital_API/
-├── config/            # Database configuration
+
+
+├── config/         # Database configuration
 ├── middlewares/       # Authentication & validation middlewares
 ├── src/
+
 │   ├── doctors/
 │   │   ├── controllers/  # Business logic for doctors
 │   │   ├── models/       # Schemas and database logic
