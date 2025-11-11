@@ -37,6 +37,9 @@ Swagger UI	Interactive API documentation
 
 **🗂️ Project Structure**
 
+
+
+
 Hospital_API/
 ├── config/            # Database configuration
 ├── middlewares/       # Authentication & validation middlewares
